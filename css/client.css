@@ -1,0 +1,219 @@
+body{
+	font-size: 14px;
+	font-family: Consolas;
+}
+.ContestStatus{
+	font-family: verdana,arial,sans-serif;
+	font-size: 16px;
+	height: 16px;
+	text-align: center;
+}
+.ContestId{
+	text-align: center;
+	width: 130px;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 3px;
+	background-color: #ccc;
+}
+.ContestName{
+	font-family: verdana,arial,sans-serif;
+	width: 100%;
+	border-left: 2px solid #ccc;
+	padding-left: 5px;
+	height: 54px;
+	font-size: 15px;
+	-webkit-line-clamp: 3;
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	text-overflow:ellipsis;
+}
+.ContestIdNumber{
+	font-size: 28px;
+}
+.ProblemList{
+	height: 67px;
+	overflow-x: scroll;
+	overflow-y: none;
+	white-space: nowrap;
+}
+.SingleProblem{
+	font-family: verdana,arial,sans-serif;
+	text-align: center;
+	position: relative;
+	min-width: 60px;
+	height: 55px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin: 0px 3px;
+	display: inline-block;
+}
+.BackgroundPic{
+	font-family: Consolas;
+	user-select:none;
+	z-index: -1;
+	position:absolute;
+    left:calc(50% - 30px);
+    top:0px;
+    width: 60px;
+    height: 55px;
+    font-size: 50px;
+    text-align: center;
+    color: #ccc;
+}
+.ProblemScore{
+	font-size: 0.9em;
+}
+.ProblemResult{
+	font-size: 0.9em;
+}
+.ProblemAccepted{
+	font-weight: bold;
+	color: #0a0;
+}
+.ProblemWrong{
+	font-weight: bold;
+	color: red;
+}
+.ProblemUnknown{
+	font-weight: bold;
+	color: grey;
+}
+.ProblemCoding{
+	color: grey;
+}
+.TimeUsed{
+	font-size: 9px;
+}
+hr{
+	margin: 2px;
+	height: 1px;
+	border: 0px;
+	background-color: #000;
+}
+.CurrentRatingDescription{
+	padding: 3px;
+	background-color: #ccc;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.RatingGraphDescription{
+	padding: 3px;
+}
+.CurrentRating{
+	font-size: 44px;
+	text-align: right;
+	width: 100%;
+	background-color: #ccc;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+#highchatrsContainer{
+	vertical-align: center;
+	height: 220px;
+	max-height: 220px;
+	min-height: 0px;
+}
+.ConnectionStatus{
+	margin-left: 2px;
+}
+.UserType{
+	float: left;
+	margin: 1px;
+	padding: 1px;
+	border-radius: 3px;
+	background: #777;
+	color: #fff;
+}
+.ToolList{
+	float: right;
+}
+button{
+	text-align: center;
+	outline: 0px;
+	height: 24px;
+	width: 24px;
+	cursor: pointer;
+	border-radius: 12px;
+	padding: 0px;
+	border: 0px;
+	background: #ccc;
+	transition: background 0.3s;
+}
+button:hover{
+	background: #aaa;
+}
+input{
+	transition: background 0.3s;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    border-radius: 4px;
+    padding: 3px;
+    border: 2px solid grey;
+    font-size: 14px;
+    font-family: 'Consolas','Fira Code','Source Code Pro','Lucida Console','Cascadia Code','Ubuntu Mono','Monospace';
+    height: 22px;
+    width: 100%;
+}
+
+select{
+	transition: background 0.3s;
+	font-size: 14px;
+	font-family: Consolas;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 22px;
+}
+select:hover{
+	background: #eee;
+}
+select[disabled='disabled']{
+	background: #ccc;
+	color: black;
+}
+select[disabled='disabled']:hover{
+	background: #aaa;
+}
+input[readonly='readonly']{
+	background: #ccc;
+}
+.style_warning{
+    color: #d2713a;
+}
+.style_error{
+    color :#e7483f;
+}
+.style_accept{
+    color: #20901c;
+}
+.style_pending{
+    color: grey;
+}
+
+.ProblemList::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+.ProblemList::-webkit-scrollbar-thumb{
+    border-radius: 1px;
+}
+.ProblemList::-webkit-scrollbar-corner{
+    display: none;
+}
+.ProblemList::-webkit-scrollbar{
+	transition: background-color 0.3s;
+    width: 5px;
+    height: 5px;
+}
+.ProblemList::-webkit-scrollbar-thumb{
+	background-color: #888;
+    border-radius: 1px;
+}
+.ProblemList::-webkit-scrollbar-corner{
+    display: none;
+}
+.ProblemList::-webkit-scrollbar:hover{
+    background-color: #ccc;
+}

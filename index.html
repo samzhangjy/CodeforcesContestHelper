@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<script src="./js/highcharts.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/json3.min.js"></script>
+		<script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
+		<link rel="stylesheet" href="./css/client.css">
+		<link rel="stylesheet" href="./css/all.min.css">
+	</head>
+	<body>
+		<div style="width:600px;height:280px;border:2px solid #000">
+		<table style="table-layout:fixed;width:100%;">
+			<tr>
+				<td style="border: 2px solid #ccc;border-radius: 5px;width:289px;">
+					<table style="table-layout:fixed;border-collapse:collapse;padding:0px;width:100%">
+					<tr>
+						<td style="padding:0px;width:130px;"><div class="CurrentRatingDescription"><i class="fa fa-th-list"></i> Rank</div></td>
+						<td style="padding:0px;width:calc(100% - 130px)" rowspan='2'><div class="CurrentRating">#?</div></td>
+					</tr>
+					<tr>
+						<td><div class="RatingGraphDescription" style="width:130px;"><i class="fa fa-line-chart"></i> Rank Graph&nbsp;</div></td>
+					</tr>
+				</table>
+				<div id="highchatrsContainer"><div style="height:100%;display: flex;align-items: center;justify-content: center;vertical-align:center">Blank</div></div>
+				<td style="width:2px"></td>
+				<td style="width:289px;">
+					<div class="ContestStatus">Idle</div>
+					<table>
+						<tr>
+							<td><div class="ContestId"><i class="fa fa-calendar"></i> Contest Id:</br><span class="ContestIdNumber">?</span></div></td>
+							<td><div class="ContestName">?</div></td>
+						</tr>
+					</table>
+					<hr>
+					<div class="ProblemList">
+						<div style="height:100%;display: flex;align-items: center;justify-content: center;vertical-align:center">Blank</div>
+					</div>
+					<hr>
+					<table style="width:100%;table-layout:fixed;">
+						<tr>
+							<td style="width: 60px;">Name: </td>
+							<td><input type="text" class="UsernameInput" /></td>
+						</tr>
+						<tr>
+							<td style="width: 60px;">ID: </td>
+							<td><input type="text" class="ContestIDInput" /></td>
+						</tr>
+						<tr>
+							<td style="width: 60px;">Time: </td>
+							<td><select class="ContestTypeChosen"></select></td>
+						</tr>
+					</table>
+					<div class="ConnectionStatus"><i class="fa fa-globe"></i> Fill & Send to update!</div>
+					<span class="UserType">?</span>
+					<div class="ToolList">
+						<button type="button" class="LockButton"><i class="fa fa-lock"></i></button>
+						<button type="button" class="UnofficialButton"><i class="fa fa-user"></i></button>
+						<button type="button" class="SendButton"><i class="fa fa-send"></i></button>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	</body>
+	<footer>
+		<script src="./js/client.js"></script>
+	</footer>
+</html>
